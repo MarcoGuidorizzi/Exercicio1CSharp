@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 
 namespace PrimeiroProjeto
@@ -14,7 +14,7 @@ namespace PrimeiroProjeto
             precoMetroQuadrado = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
             area = largura * comprimento;
-            preco = comprimento * area;
+            preco = area * precoMetroQuadrado;
 
             Console.WriteLine("AREA = " + area.ToString("F2", CultureInfo.InvariantCulture));
             Console.WriteLine("PREÇO = " + preco.ToString("F2", CultureInfo.InvariantCulture));
